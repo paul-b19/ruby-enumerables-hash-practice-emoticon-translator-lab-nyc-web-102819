@@ -7,8 +7,8 @@ def load_library(path)
   library = YAML.load_file(path)
   pp library
   library.map do |key, value|
-    new_library[get_meaning][value] = key;
-    new_library[get_emoticon][key] = value;
+    new_library[:get_meaning][value] = key;
+    new_library[:get_emoticon][key] = value;
   end
   new_library
   pp new_library
