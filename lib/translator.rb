@@ -3,7 +3,10 @@ require 'pp'
 
 def load_library(path)
   library = {}
+  new_library = {}
   library = YAML.load_file(path)
+  library.map do |key, value|
+    
   pp library
 end
 
