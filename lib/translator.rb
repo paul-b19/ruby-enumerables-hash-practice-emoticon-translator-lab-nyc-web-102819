@@ -15,8 +15,9 @@ end
 
 def get_japanese_emoticon(path, eng)
   library = load_library(path)
-  jap = library[:get_emoticon].each_pair do |key, value|
-    value if key == eng.to_sym
+  jap = ""
+  library[:get_emoticon].each_pair do |key, value|
+    jap = value if key == eng.to_sym
   end
   p jap
   jap
