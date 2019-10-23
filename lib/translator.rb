@@ -19,11 +19,18 @@ def get_japanese_emoticon(path, eng)
   library[:get_emoticon].each_pair do |key, value|
     jap = value if key == eng
   end
-  p eng
-  p jap
+  # p eng
+  # p jap
   jap
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(path, jap)
+  library = load_library(path)
+  mean = "Sorry, that emoticon was not found"
+  library[:get_meaning].each_pair do |key, value|
+    mean = value if key == jap
+  end
+  p jap
+  p mean
+  mean
 end
