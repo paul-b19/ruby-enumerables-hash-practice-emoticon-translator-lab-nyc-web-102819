@@ -8,7 +8,7 @@ def load_library(path)
   pp library
   library.map do |key, value|
     new_library[:get_meaning][value[1]] = key;
-    new_library[:get_emoticon][key] = value;
+    new_library[:get_emoticon][value[0]] = value[1];
   end
   new_library
   pp new_library
