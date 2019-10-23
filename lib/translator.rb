@@ -15,7 +15,7 @@ end
 
 def get_japanese_emoticon(path, eng)
   library = load_library(path)
-  jap = "404 Not Found"
+  jap = "Sorry, that emoticon was not found"
   library[:get_emoticon].each_pair do |key, value|
     jap = value if key == eng
   end
