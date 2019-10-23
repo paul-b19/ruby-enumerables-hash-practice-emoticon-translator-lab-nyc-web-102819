@@ -2,7 +2,6 @@ require 'yaml'
 require 'pp'
 
 def load_library(path)
-  # library = {}
   library = YAML.load_file(path)
   new_library = {get_meaning: {}, get_emoticon: {}}
   # pp library
