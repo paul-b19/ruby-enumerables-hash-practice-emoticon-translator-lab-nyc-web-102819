@@ -19,6 +19,7 @@ def get_japanese_emoticon(path, eng)
   library[:get_emoticon].each_pair do |key, value|
     jap = value if key == eng
   end
+  p eng
   p jap
   jap
 end
