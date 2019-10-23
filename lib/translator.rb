@@ -30,7 +30,7 @@ def get_english_meaning(path, jap)
   library[:get_meaning].each_pair do |key, value|
     mean = value if key == jap
   end
-  p jap
-  p mean
+  # p jap
+  # p mean
   mean
 end
