@@ -15,7 +15,7 @@ end
 
 def get_japanese_emoticon(path, eng)
   library = load_library(path)
-  jap = library[:get_emoticon].select{|key, value| key == eng.to_sym}.values
+  jap = library[:get_emoticon].select{|key, value| key == eng.to_sym}.value
   p jap
   jap
 end
