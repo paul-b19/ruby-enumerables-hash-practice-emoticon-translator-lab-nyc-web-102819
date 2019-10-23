@@ -10,7 +10,7 @@ def load_library(path)
     new_library[get_meaning][value] = key;
     new_library[get_emoticon][key] = value;
   end
-    
+  new_library
   pp new_library
 end
 
